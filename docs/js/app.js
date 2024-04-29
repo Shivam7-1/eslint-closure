@@ -212,7 +212,7 @@ class Editor {
    * @param {!Array<!ESLint.LintMessage>} results
    */
   displayLintResults(messages) {
-    this.resultsNode.innerHTML = "";
+    this.resultsNode.innerText = "";
 
     if (messages.length === 0) {
       this.resultsNode.innerHTML("<li>Lint Free!</li>");
